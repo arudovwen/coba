@@ -9,12 +9,25 @@ export function links() {
     },
     {
       rel: "stylesheet",
-      href: "/index.css",
+      href: "/src/index.css",
     },
     {
       rel: "preload",
       href: "/images/banner.jpg",
       as: "image",
+    },
+    
+       {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    },
+     {
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossorigin: true
+    },{
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap",
     },
   ];
 }

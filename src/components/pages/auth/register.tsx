@@ -1,0 +1,101 @@
+import { Link } from "react-router";
+import Logo from "../../ui/Logo";
+import TextInput from "../../Form/TextInput";
+import Button from "../../Button";
+import { useState } from "react";
+import PasswordBar from "../../ui/PasswordBar";
+
+interface TabOptionsProps {
+  label: string;
+  value: string;
+}
+
+export default function RegisterComponent() {
+  const [selected, setSelected] = useState("individual");
+  const TabOptions: TabOptionsProps[] = [
+    {
+      label: "Individual",
+      value: "individual",
+    },
+    {
+      label: "Organization",
+      value: "organization",
+    },
+  ];
+  return (
+    <div className="auth_shadow bg-white px-8 py-14 max-w-[500px] w-full">
+      <div className="flex justify-center mb-2">
+        <Logo />
+      </div>
+      <p className="text-center text-gray/70 font-semibold text-base mb-6">
+        Welcome, Sign Up As
+      </p>
+      <div>
+        <div className="mb-5">
+          <ul className="flex justify-between">
+            {TabOptions?.map((i: TabOptionsProps, index) => (
+              <li
+                onClick={() => setSelected(i.value)}
+                className={`w-[190px] text-center inline-block text-base font-semibold py-[10px] cursor-pointer ${
+                  selected === i.value ? "text-main" : "text-gray/50"
+                }`}
+                key={index}
+              >
+                {i.label}
+              </li>
+            ))}
+          </ul>
+          <div className=" bg-[#D9D9D9] rounded-full flex justify-between">
+            {TabOptions?.map((i: TabOptionsProps, index) => (
+              <div
+                key={index}
+                className={`w-[190px] py-1 h-full rounded-full ${
+                  selected === i.value ? "bg-main" : "bg-transparent"
+                }`}
+              ></div>
+            ))}
+          </div>
+        </div>
+        <form>
+          <div className="grid gap-y-4 mb-8">
+            <TextInput placeholder={"name@mail.com"} name={""} />
+            <TextInput placeholder={"name@mail.com"} name={""} />
+            <TextInput placeholder={"name@mail.com"} name={""} />
+            <div>
+              <TextInput placeholder={"name@mail.com"} name={""} />
+              <div className="mt-2">
+                {" "}
+                <PasswordBar percent={0} />
+              </div>
+            </div>
+            <TextInput placeholder={"Minimum 8 characters"} name={""} />
+          </div>
+          <div>
+            <Button text={"Sign Up"} />
+          </div>
+        </form>
+        <div className="mb-6">
+          <div className="flex justify-center items-center gap-x-1 my-8">
+            <div className="border-b flex-1 border-gray/20" />{" "}
+            <span className="text-base font-semibold text-gray/50">OR</span>{" "}
+            <div className="border-b flex-1  border-gray/20" />
+          </div>
+          <Button text={"Sign Up Using Google"} />
+        </div>
+        <div className="text-base">
+          <span className=" text-gray/70 font-semibold">
+            Already registered?
+          </span>{" "}
+          <Link to={"/auth/login"}>
+            <button
+              type="button"
+              className="cursor-pointer text-main  font-semibold"
+            >
+              Login
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}

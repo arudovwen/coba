@@ -1,0 +1,59 @@
+import { Link } from "react-router";
+import Logo from "../../ui/Logo";
+import Button from "../../Button";
+import TextInput from "../../Form/TextInput";
+
+export default function LoginComponent() {
+  return (
+    <div className="auth_shadow bg-white px-8 py-14 max-w-[500px] w-full">
+      <div className="flex justify-center mb-2">
+        <Logo />
+      </div>
+      <p className="text-center text-gray/70 font-semibold text-base mb-8">
+        Welcome, Login As
+      </p>
+      <div>
+        <form>
+          <div className="grid gap-y-4 mb-2">
+            <TextInput placeholder={"name@mail.com"} name={""} />
+            <TextInput placeholder={"Minimum 8 characters"} name={""} />
+          </div>
+          <div>
+            <div className="mb-6 flex justify-end">
+              <Link to="/auth/forgot-password">
+                <button
+                  type="button"
+                  className="text-sm font-semibold text-red"
+                >
+                  Forgot password?
+                </button>
+              </Link>
+            </div>
+            <Button text={"Login"} />
+          </div>
+        </form>
+        <div className="mb-6">
+          <div className="flex justify-center items-center gap-x-1 my-10">
+            <div className="border-b flex-1 border-gray/20" />{" "}
+            <span className="text-base font-semibold text-gray/50">OR</span>{" "}
+            <div className="border-b flex-1  border-gray/20" />
+          </div>
+          <Button text={"Login Using Google"} />
+        </div>
+        <div className="text-base">
+          <span className=" text-gray/70 font-semibold">
+            Not yet registered?
+          </span>{" "}
+          <Link to={"/auth/register"}>
+            <button
+              type="button"
+              className="cursor-pointer text-main  font-semibold"
+            >
+              Sign Up
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}

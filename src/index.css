@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-main: #3d3f94;
+  --color-black: #000000;
+  --color-gray: #333333;
+  --color-red: #ef5d5d;
+}
+.auth_bg {
+  background: linear-gradient(
+    124.64deg,
+    rgba(255, 255, 255, 0.1) -64.26%,
+    #3d3f94 170.86%
+  );
+}
+
+.auth_shadow {
+  box-shadow: 0px 4px 11px 0px #3d3f9440;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
