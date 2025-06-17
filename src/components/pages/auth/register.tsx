@@ -1,9 +1,10 @@
 import { Link } from "react-router";
-import Logo from "../../ui/Logo";
-import TextInput from "../../Form/TextInput";
-import Button from "../../Button";
+import Logo from "@ui/Logo";
+import TextInput from "@Form/TextInput";
+import Button from "@Button";
 import { useState } from "react";
-import PasswordBar from "../../ui/PasswordBar";
+import PasswordBar from "@ui/PasswordBar";
+import AppIcon from "@ui/Icon";
 
 interface TabOptionsProps {
   label: string;
@@ -23,7 +24,7 @@ export default function RegisterComponent() {
     },
   ];
   return (
-    <div className="auth_shadow bg-white px-8 py-14 max-w-[500px] w-full">
+    <div className="auth_shadow bg-white px-8 pt-10 pb-8 max-w-[500px] w-full">
       <div className="flex justify-center mb-2">
         <Logo />
       </div>
@@ -58,17 +59,53 @@ export default function RegisterComponent() {
         </div>
         <form>
           <div className="grid gap-y-4 mb-8">
-            <TextInput placeholder={"name@mail.com"} name={""} />
-            <TextInput placeholder={"name@mail.com"} name={""} />
-            <TextInput placeholder={"name@mail.com"} name={""} />
+            <TextInput
+              label="First name"
+              placeholder={"Enter first name"}
+              name={""}
+            />
+            <TextInput
+              label="Last name"
+              placeholder={"Enter last name"}
+              name={""}
+            />
+            <TextInput
+              placeholder={"name@mail.com"}
+              type="email"
+              label="Email address"
+              name={""}
+              rightIcon={
+                <AppIcon
+                  icon="octicon:mail-16"
+                  iconClass="text-main text-base"
+                />
+              }
+            />
             <div>
-              <TextInput placeholder={"name@mail.com"} name={""} />
+              <TextInput
+                placeholder={"name@mail.com"}
+                name={""}
+                type="password"
+                label="Password"
+              />
               <div className="mt-2">
                 {" "}
                 <PasswordBar percent={0} />
               </div>
             </div>
-            <TextInput placeholder={"Minimum 8 characters"} name={""} />
+            <TextInput
+              label="Confirm Password"
+              placeholder={"Minimum 8 characters"}
+              type="password"
+              name={""}
+            />
+            {selected === "organization" && (
+              <TextInput
+                label="Organization name"
+                placeholder={"Enter last name"}
+                name={""}
+              />
+            )}
           </div>
           <div>
             <Button text={"Sign Up"} />
@@ -80,7 +117,12 @@ export default function RegisterComponent() {
             <span className="text-base font-semibold text-gray/50">OR</span>{" "}
             <div className="border-b flex-1  border-gray/20" />
           </div>
-          <Button text={"Sign Up Using Google"} />
+
+          <Button
+            text={"Sign Up Using Google"}
+            className="bg-[#F4F4F4] border border-[#F4F4F4] !text-gray/70"
+            leftIcon={<AppIcon icon="logos:google-icon" />}
+          />
         </div>
         <div className="text-base">
           <span className=" text-gray/70 font-semibold">

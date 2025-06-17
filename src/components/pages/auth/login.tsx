@@ -1,7 +1,8 @@
 import { Link } from "react-router";
-import Logo from "../../ui/Logo";
-import Button from "../../Button";
-import TextInput from "../../Form/TextInput";
+import Logo from "@ui/Logo";
+import Button from "@Button";
+import TextInput from "@Form/TextInput";
+import AppIcon from "@ui/Icon";
 
 export default function LoginComponent() {
   return (
@@ -15,8 +16,24 @@ export default function LoginComponent() {
       <div>
         <form>
           <div className="grid gap-y-4 mb-2">
-            <TextInput placeholder={"name@mail.com"} name={""} />
-            <TextInput placeholder={"Minimum 8 characters"} name={""} />
+            <TextInput
+              label="Email address"
+              placeholder={"name@mail.com"}
+              name={""}
+              type="email"
+              rightIcon={
+                <AppIcon
+                  icon="octicon:mail-16"
+                  iconClass="text-main text-base"
+                />
+              }
+            />
+            <TextInput
+              label="Password"
+              placeholder={"Minimum 8 characters"}
+              type="password"
+              name={""}
+            />
           </div>
           <div>
             <div className="mb-6 flex justify-end">
@@ -38,7 +55,7 @@ export default function LoginComponent() {
             <span className="text-base font-semibold text-gray/50">OR</span>{" "}
             <div className="border-b flex-1  border-gray/20" />
           </div>
-          <Button text={"Login Using Google"} />
+          <Button text={"Login Using Google"} className="bg-[#F4F4F4] border border-[#F4F4F4] !text-gray/70"  leftIcon={<AppIcon icon="logos:google-icon" />} />
         </div>
         <div className="text-base">
           <span className=" text-gray/70 font-semibold">

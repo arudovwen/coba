@@ -1,7 +1,7 @@
 import React, { SyntheticEvent } from "react";
 import { Calendar } from "primereact/calendar";
 import { FormEvent, Nullable } from "primereact/ts-helpers";
-import CalendarIcon from "../../assets/calender-icon.svg";
+import CalendarIcon from "@assets/calender-icon.svg";
 
 type DatePickerProp = {
   onChange:

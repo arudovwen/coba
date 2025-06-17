@@ -1,11 +1,11 @@
-import Button from "../../Button";
+import Button from "@components/Button";
 import CodeSvg from "./svgs/code";
 import DownloadSvg from "./svgs/download";
 import ScanSvg from "./svgs/scan";
 import QRCode from "react-qr-code";
 import { OtpInput } from "reactjs-otp-input";
 import { useState } from "react";
-import AuthHeader from "../../ui/AuthHeader";
+import AuthHeader from "@ui/AuthHeader";
 
 export default function TwoFaComponent() {
   const options = [
@@ -77,7 +77,7 @@ export default function TwoFaComponent() {
           />
         </div>
         <div className="mt-10 flex gap-x-4 items-center">
-          <Button text={"Skip"} /> <Button text={"Proceed"} />
+          <Button text={"Skip"} variant="outline" /> <Button text={"Proceed"} />
         </div>
       </form>
     </div>

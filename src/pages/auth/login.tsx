@@ -1,5 +1,5 @@
-import LoginComponent from "../../components/pages/auth/login";
-import AuthLayout from "../../layouts/AuthLayout";
+import LoginComponent from "@components/pages/auth/login";
+import AuthLayout from "@layouts/AuthLayout";
 
 export async function clientLoader() {
   return {

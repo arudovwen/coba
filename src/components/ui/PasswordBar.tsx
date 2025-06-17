@@ -35,7 +35,7 @@ export default function PasswordBar({ percent }: PasswordBarProps) {
           />
         ))}
       </div>
-      <span className="text-xs">
+      <span className="text-[11px] text-gray/70">
         Password strength:{" "}
         <span style={{ color: strength.color }}>{strength.label}</span>
       </span>

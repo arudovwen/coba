@@ -1,5 +1,5 @@
-import PasswordResetComponent from "../../components/pages/auth/password-reset";
-import AuthLayout from "../../layouts/AuthLayout";
+import PasswordResetComponent from "@components/pages/auth/password-reset";
+import AuthLayout from "@layouts/AuthLayout";
 
 export async function clientLoader() {
   return {

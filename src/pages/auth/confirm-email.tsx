@@ -1,5 +1,5 @@
-import ConfirmEmailComponent from "../../components/pages/auth/confirm-email";
-import AuthLayout from "../../layouts/AuthLayout";
+import ConfirmEmailComponent from "@components/pages/auth/confirm-email";
+import AuthLayout from "@layouts/AuthLayout";
 
 export async function clientLoader() {
   return {

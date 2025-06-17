@@ -1,6 +1,7 @@
-import Button from "../../Button";
-import TextInput from "../../Form/TextInput";
-import AuthHeader from "../../ui/AuthHeader";
+import Button from "@Button";
+import TextInput from "@Form/TextInput";
+import AuthHeader from "@ui/AuthHeader";
+import { Link } from "react-router";
 
 export default function PasswordResetComponent() {
   return (
@@ -13,13 +14,33 @@ export default function PasswordResetComponent() {
       </div>
       <form>
         <div className="grid gap-y-4">
-          <TextInput placeholder={"name@mail.com"} name={""} />
-          <TextInput placeholder={"name@mail.com"} name={""} />
+          <TextInput
+            label="New Password"
+            placeholder={"Minimum 8 characters"}
+            type="password"
+            name={""}
+          />
+          <TextInput
+            label="Confirm Password"
+            placeholder={"Confirm new password"}
+            type="password"
+            name={""}
+          />
         </div>
         <div className="mt-10">
           <Button text={"Submit"} />
         </div>
       </form>
+      <div className="text-base text-center mt-5">
+        <Link to={"/auth/login"}>
+          <button
+            type="button"
+            className="cursor-pointer text-main  font-semibold"
+          >
+            Back to Login
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

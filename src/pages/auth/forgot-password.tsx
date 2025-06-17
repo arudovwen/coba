@@ -1,5 +1,5 @@
-import ForgotPasswordComponent from "../../components/pages/auth/forgot-password";
-import AuthLayout from "../../layouts/AuthLayout";
+import ForgotPasswordComponent from "@components/pages/auth/forgot-password";
+import AuthLayout from "@layouts/AuthLayout";
 
 export async function clientLoader() {
   return {

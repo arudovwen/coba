@@ -1,6 +1,8 @@
-import Button from "../../Button";
-import TextInput from "../../Form/TextInput";
-import AuthHeader from "../../ui/AuthHeader";
+import Button from "@Button";
+import TextInput from "@Form/TextInput";
+import AuthHeader from "@ui/AuthHeader";
+import AppIcon from "@ui/Icon";
+import { Link } from "react-router";
 
 export default function ForgotPasswordComponent() {
   return (
@@ -14,10 +16,28 @@ export default function ForgotPasswordComponent() {
       </div>
       <form>
         <div className="grid gap-y-4">
-          <TextInput placeholder={"name@mail.com"} name={""} />
+          <TextInput
+            placeholder={"name@mail.com"}
+            type="email"
+            label="Email address"
+            name={""}
+            rightIcon={
+              <AppIcon icon="octicon:mail-16" iconClass="text-main text-base" />
+            }
+          />
         </div>
         <div className="mt-10">
           <Button text={"Send Password Reset Link"} />
+        </div>
+        <div className="text-base text-center mt-5">
+          <Link to={"/auth/login"}>
+            <button
+              type="button"
+              className="cursor-pointer text-main  font-semibold"
+            >
+              Back to Login
+            </button>
+          </Link>
         </div>
       </form>
     </div>
