@@ -5,7 +5,7 @@ import ScanSvg from "./svgs/scan";
 import QRCode from "react-qr-code";
 import { OtpInput } from "reactjs-otp-input";
 import { useState } from "react";
-import AuthHeader from "@ui/AuthHeader";
+import AuthHeader from "@components/ui/AuthHeader";
 
 export default function TwoFaComponent() {
   const options = [

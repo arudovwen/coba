@@ -1,10 +1,10 @@
 import { Link } from "react-router";
-import Logo from "@ui/Logo";
-import TextInput from "@Form/TextInput";
-import Button from "@Button";
+import Logo from "@components/ui/Logo";
+import TextInput from "@components/Form/TextInput";
+import Button from "@components/Button";
 import { useState } from "react";
-import PasswordBar from "@ui/PasswordBar";
-import AppIcon from "@ui/Icon";
+import PasswordBar from "@components/ui/PasswordBar";
+import AppIcon from "@components/ui/Icon";
 
 interface TabOptionsProps {
   label: string;

@@ -1,4 +1,3 @@
-import React from "react";
 import { Dropdown, DropdownChangeEvent } from "primereact/dropdown";
 
 type SelectProp = {

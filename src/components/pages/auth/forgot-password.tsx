@@ -1,7 +1,7 @@
-import Button from "@Button";
-import TextInput from "@Form/TextInput";
-import AuthHeader from "@ui/AuthHeader";
-import AppIcon from "@ui/Icon";
+import Button from "@components/Button";
+import TextInput from "@components/Form/TextInput";
+import AuthHeader from "@components/ui/AuthHeader";
+import AppIcon from "@components/ui/Icon";
 import { Link } from "react-router";
 
 export default function ForgotPasswordComponent() {

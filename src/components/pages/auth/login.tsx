@@ -1,8 +1,8 @@
 import { Link } from "react-router";
-import Logo from "@ui/Logo";
-import Button from "@Button";
-import TextInput from "@Form/TextInput";
-import AppIcon from "@ui/Icon";
+import Logo from "@components/ui/Logo";
+import Button from "@components/Button";
+import TextInput from "@components/Form/TextInput";
+import AppIcon from "@components/ui/Icon";
 
 export default function LoginComponent() {
   return (

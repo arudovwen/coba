@@ -1,4 +1,4 @@
-import AuthHeader from "@ui/AuthHeader";
+import AuthHeader from "@components/ui/AuthHeader";
 import { Link } from "react-router";
 
 export default function ConfirmEmailComponent() {

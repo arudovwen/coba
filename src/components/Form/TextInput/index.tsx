@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AppIcon from "@ui/Icon";
+import AppIcon from "@components/ui/Icon";
 
 type InputProps = {
   label?: string;
