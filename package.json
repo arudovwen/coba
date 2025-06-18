@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-router/node": "^7.6.2",
     "@tailwindcss/vite": "^4.1.8",
+    "@vercel/react-router": "^1.1.2",
     "clsx": "^2.1.1",
     "isbot": "^5",
     "primereact": "^10.9.6",
