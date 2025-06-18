@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && react-router build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "react-router preview"
   },
   "dependencies": {
     "@react-router/node": "^7.6.2",

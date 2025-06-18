@@ -1,0 +1,221 @@
+{
+  "buildManifest": {
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "pages/home/index": {
+        "id": "pages/home/index",
+        "parentId": "root",
+        "file": "./pages/home/index.tsx",
+        "index": true
+      },
+      "pages/auth/login": {
+        "id": "pages/auth/login",
+        "parentId": "root",
+        "file": "./pages/auth/login.tsx",
+        "path": "auth/login"
+      },
+      "pages/auth/register": {
+        "id": "pages/auth/register",
+        "parentId": "root",
+        "file": "./pages/auth/register.tsx",
+        "path": "auth/register"
+      },
+      "pages/auth/confirm-email": {
+        "id": "pages/auth/confirm-email",
+        "parentId": "root",
+        "file": "./pages/auth/confirm-email.tsx",
+        "path": "auth/confirm-email"
+      },
+      "pages/auth/forgot-password": {
+        "id": "pages/auth/forgot-password",
+        "parentId": "root",
+        "file": "./pages/auth/forgot-password.tsx",
+        "path": "auth/forgot-password"
+      },
+      "pages/auth/password-reset": {
+        "id": "pages/auth/password-reset",
+        "parentId": "root",
+        "file": "./pages/auth/password-reset.tsx",
+        "path": "auth/reset-password"
+      },
+      "pages/auth/two-factor-authentication": {
+        "id": "pages/auth/two-factor-authentication",
+        "parentId": "root",
+        "file": "./pages/auth/two-factor-authentication.tsx",
+        "path": "auth/two-factor-setup"
+      },
+      "pages/model/index": {
+        "id": "pages/model/index",
+        "parentId": "root",
+        "file": "./pages/model/index.tsx",
+        "path": "model"
+      },
+      "pages/model/chat/index": {
+        "id": "pages/model/chat/index",
+        "parentId": "pages/model/index",
+        "file": "./pages/model/chat/index.tsx",
+        "path": "chats"
+      },
+      "pages/model/chat/explorer": {
+        "id": "pages/model/chat/explorer",
+        "parentId": "pages/model/chat/index",
+        "file": "./pages/model/chat/explorer.tsx",
+        "path": "explorer"
+      },
+      "pages/model/chat/analyzer": {
+        "id": "pages/model/chat/analyzer",
+        "parentId": "pages/model/chat/index",
+        "file": "./pages/model/chat/analyzer.tsx",
+        "path": "analyzer"
+      },
+      "pages/model/chat/builder": {
+        "id": "pages/model/chat/builder",
+        "parentId": "pages/model/chat/index",
+        "file": "./pages/model/chat/builder.tsx",
+        "path": "builder"
+      },
+      "pages/model/doc": {
+        "id": "pages/model/doc",
+        "parentId": "pages/model/index",
+        "file": "./pages/model/doc.tsx",
+        "path": "doc"
+      },
+      "pages/model/data": {
+        "id": "pages/model/data",
+        "parentId": "pages/model/index",
+        "file": "./pages/model/data.tsx",
+        "path": "data"
+      },
+      "catchall": {
+        "id": "catchall",
+        "parentId": "root",
+        "file": "catchall.tsx",
+        "path": "*?"
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "C:/Users/succe/Documents/GitHub/CoBA/src",
+    "basename": "/",
+    "buildDirectory": "C:/Users/succe/Documents/GitHub/CoBA/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "pages/home/index": {
+        "id": "pages/home/index",
+        "parentId": "root",
+        "file": "./pages/home/index.tsx",
+        "index": true
+      },
+      "pages/auth/login": {
+        "id": "pages/auth/login",
+        "parentId": "root",
+        "file": "./pages/auth/login.tsx",
+        "path": "auth/login"
+      },
+      "pages/auth/register": {
+        "id": "pages/auth/register",
+        "parentId": "root",
+        "file": "./pages/auth/register.tsx",
+        "path": "auth/register"
+      },
+      "pages/auth/confirm-email": {
+        "id": "pages/auth/confirm-email",
+        "parentId": "root",
+        "file": "./pages/auth/confirm-email.tsx",
+        "path": "auth/confirm-email"
+      },
+      "pages/auth/forgot-password": {
+        "id": "pages/auth/forgot-password",
+        "parentId": "root",
+        "file": "./pages/auth/forgot-password.tsx",
+        "path": "auth/forgot-password"
+      },
+      "pages/auth/password-reset": {
+        "id": "pages/auth/password-reset",
+        "parentId": "root",
+        "file": "./pages/auth/password-reset.tsx",
+        "path": "auth/reset-password"
+      },
+      "pages/auth/two-factor-authentication": {
+        "id": "pages/auth/two-factor-authentication",
+        "parentId": "root",
+        "file": "./pages/auth/two-factor-authentication.tsx",
+        "path": "auth/two-factor-setup"
+      },
+      "pages/model/index": {
+        "id": "pages/model/index",
+        "parentId": "root",
+        "file": "./pages/model/index.tsx",
+        "path": "model"
+      },
+      "pages/model/chat/index": {
+        "id": "pages/model/chat/index",
+        "parentId": "pages/model/index",
+        "file": "./pages/model/chat/index.tsx",
+        "path": "chats"
+      },
+      "pages/model/chat/explorer": {
+        "id": "pages/model/chat/explorer",
+        "parentId": "pages/model/chat/index",
+        "file": "./pages/model/chat/explorer.tsx",
+        "path": "explorer"
+      },
+      "pages/model/chat/analyzer": {
+        "id": "pages/model/chat/analyzer",
+        "parentId": "pages/model/chat/index",
+        "file": "./pages/model/chat/analyzer.tsx",
+        "path": "analyzer"
+      },
+      "pages/model/chat/builder": {
+        "id": "pages/model/chat/builder",
+        "parentId": "pages/model/chat/index",
+        "file": "./pages/model/chat/builder.tsx",
+        "path": "builder"
+      },
+      "pages/model/doc": {
+        "id": "pages/model/doc",
+        "parentId": "pages/model/index",
+        "file": "./pages/model/doc.tsx",
+        "path": "doc"
+      },
+      "pages/model/data": {
+        "id": "pages/model/data",
+        "parentId": "pages/model/index",
+        "file": "./pages/model/data.tsx",
+        "path": "data"
+      },
+      "catchall": {
+        "id": "catchall",
+        "parentId": "root",
+        "file": "catchall.tsx",
+        "path": "*?"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "initial"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": false
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
