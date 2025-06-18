@@ -11,7 +11,7 @@
       "@/*": ["*"],
       "@components/*": ["components/*"],
       "@assets/*": ["assets/*"],
-      "@pages/*": ["pages/*"],
+      "@routes/*": ["routes/*"],
       "@layouts/*": ["layouts/*"]
     },
 
@@ -32,10 +32,10 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "**/*",
-    "**/.server/**/*",
-    "**/.client/**/*",
-    ".react-router/types/**/*",
+    // "**/*",
+    // "**/.server/**/*",
+    // "**/.client/**/*",
+    // ".react-router/types/**/*",
     "src",
     "declarations.d.ts"
   ]

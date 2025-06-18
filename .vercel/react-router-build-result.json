@@ -6,88 +6,88 @@
         "id": "root",
         "file": "root.tsx"
       },
-      "pages/home/index": {
-        "id": "pages/home/index",
+      "routes/home/index": {
+        "id": "routes/home/index",
         "parentId": "root",
-        "file": "./pages/home/index.tsx",
+        "file": "./routes/home/index.tsx",
         "index": true
       },
-      "pages/auth/login": {
-        "id": "pages/auth/login",
+      "routes/auth/login": {
+        "id": "routes/auth/login",
         "parentId": "root",
-        "file": "./pages/auth/login.tsx",
+        "file": "./routes/auth/login.tsx",
         "path": "auth/login"
       },
-      "pages/auth/register": {
-        "id": "pages/auth/register",
+      "routes/auth/register": {
+        "id": "routes/auth/register",
         "parentId": "root",
-        "file": "./pages/auth/register.tsx",
+        "file": "./routes/auth/register.tsx",
         "path": "auth/register"
       },
-      "pages/auth/confirm-email": {
-        "id": "pages/auth/confirm-email",
+      "routes/auth/confirm-email": {
+        "id": "routes/auth/confirm-email",
         "parentId": "root",
-        "file": "./pages/auth/confirm-email.tsx",
+        "file": "./routes/auth/confirm-email.tsx",
         "path": "auth/confirm-email"
       },
-      "pages/auth/forgot-password": {
-        "id": "pages/auth/forgot-password",
+      "routes/auth/forgot-password": {
+        "id": "routes/auth/forgot-password",
         "parentId": "root",
-        "file": "./pages/auth/forgot-password.tsx",
+        "file": "./routes/auth/forgot-password.tsx",
         "path": "auth/forgot-password"
       },
-      "pages/auth/password-reset": {
-        "id": "pages/auth/password-reset",
+      "routes/auth/password-reset": {
+        "id": "routes/auth/password-reset",
         "parentId": "root",
-        "file": "./pages/auth/password-reset.tsx",
+        "file": "./routes/auth/password-reset.tsx",
         "path": "auth/reset-password"
       },
-      "pages/auth/two-factor-authentication": {
-        "id": "pages/auth/two-factor-authentication",
+      "routes/auth/two-factor-authentication": {
+        "id": "routes/auth/two-factor-authentication",
         "parentId": "root",
-        "file": "./pages/auth/two-factor-authentication.tsx",
+        "file": "./routes/auth/two-factor-authentication.tsx",
         "path": "auth/two-factor-setup"
       },
-      "pages/model/index": {
-        "id": "pages/model/index",
+      "routes/model/index": {
+        "id": "routes/model/index",
         "parentId": "root",
-        "file": "./pages/model/index.tsx",
+        "file": "./routes/model/index.tsx",
         "path": "model"
       },
-      "pages/model/chat/index": {
-        "id": "pages/model/chat/index",
-        "parentId": "pages/model/index",
-        "file": "./pages/model/chat/index.tsx",
+      "routes/model/chat/index": {
+        "id": "routes/model/chat/index",
+        "parentId": "routes/model/index",
+        "file": "./routes/model/chat/index.tsx",
         "path": "chats"
       },
-      "pages/model/chat/explorer": {
-        "id": "pages/model/chat/explorer",
-        "parentId": "pages/model/chat/index",
-        "file": "./pages/model/chat/explorer.tsx",
+      "routes/model/chat/explorer": {
+        "id": "routes/model/chat/explorer",
+        "parentId": "routes/model/chat/index",
+        "file": "./routes/model/chat/explorer.tsx",
         "path": "explorer"
       },
-      "pages/model/chat/analyzer": {
-        "id": "pages/model/chat/analyzer",
-        "parentId": "pages/model/chat/index",
-        "file": "./pages/model/chat/analyzer.tsx",
+      "routes/model/chat/analyzer": {
+        "id": "routes/model/chat/analyzer",
+        "parentId": "routes/model/chat/index",
+        "file": "./routes/model/chat/analyzer.tsx",
         "path": "analyzer"
       },
-      "pages/model/chat/builder": {
-        "id": "pages/model/chat/builder",
-        "parentId": "pages/model/chat/index",
-        "file": "./pages/model/chat/builder.tsx",
+      "routes/model/chat/builder": {
+        "id": "routes/model/chat/builder",
+        "parentId": "routes/model/chat/index",
+        "file": "./routes/model/chat/builder.tsx",
         "path": "builder"
       },
-      "pages/model/doc": {
-        "id": "pages/model/doc",
-        "parentId": "pages/model/index",
-        "file": "./pages/model/doc.tsx",
+      "routes/model/doc": {
+        "id": "routes/model/doc",
+        "parentId": "routes/model/index",
+        "file": "./routes/model/doc.tsx",
         "path": "doc"
       },
-      "pages/model/data": {
-        "id": "pages/model/data",
-        "parentId": "pages/model/index",
-        "file": "./pages/model/data.tsx",
+      "routes/model/data": {
+        "id": "routes/model/data",
+        "parentId": "routes/model/index",
+        "file": "./routes/model/data.tsx",
         "path": "data"
       },
       "catchall": {
@@ -115,88 +115,88 @@
         "id": "root",
         "file": "root.tsx"
       },
-      "pages/home/index": {
-        "id": "pages/home/index",
+      "routes/home/index": {
+        "id": "routes/home/index",
         "parentId": "root",
-        "file": "./pages/home/index.tsx",
+        "file": "./routes/home/index.tsx",
         "index": true
       },
-      "pages/auth/login": {
-        "id": "pages/auth/login",
+      "routes/auth/login": {
+        "id": "routes/auth/login",
         "parentId": "root",
-        "file": "./pages/auth/login.tsx",
+        "file": "./routes/auth/login.tsx",
         "path": "auth/login"
       },
-      "pages/auth/register": {
-        "id": "pages/auth/register",
+      "routes/auth/register": {
+        "id": "routes/auth/register",
         "parentId": "root",
-        "file": "./pages/auth/register.tsx",
+        "file": "./routes/auth/register.tsx",
         "path": "auth/register"
       },
-      "pages/auth/confirm-email": {
-        "id": "pages/auth/confirm-email",
+      "routes/auth/confirm-email": {
+        "id": "routes/auth/confirm-email",
         "parentId": "root",
-        "file": "./pages/auth/confirm-email.tsx",
+        "file": "./routes/auth/confirm-email.tsx",
         "path": "auth/confirm-email"
       },
-      "pages/auth/forgot-password": {
-        "id": "pages/auth/forgot-password",
+      "routes/auth/forgot-password": {
+        "id": "routes/auth/forgot-password",
         "parentId": "root",
-        "file": "./pages/auth/forgot-password.tsx",
+        "file": "./routes/auth/forgot-password.tsx",
         "path": "auth/forgot-password"
       },
-      "pages/auth/password-reset": {
-        "id": "pages/auth/password-reset",
+      "routes/auth/password-reset": {
+        "id": "routes/auth/password-reset",
         "parentId": "root",
-        "file": "./pages/auth/password-reset.tsx",
+        "file": "./routes/auth/password-reset.tsx",
         "path": "auth/reset-password"
       },
-      "pages/auth/two-factor-authentication": {
-        "id": "pages/auth/two-factor-authentication",
+      "routes/auth/two-factor-authentication": {
+        "id": "routes/auth/two-factor-authentication",
         "parentId": "root",
-        "file": "./pages/auth/two-factor-authentication.tsx",
+        "file": "./routes/auth/two-factor-authentication.tsx",
         "path": "auth/two-factor-setup"
       },
-      "pages/model/index": {
-        "id": "pages/model/index",
+      "routes/model/index": {
+        "id": "routes/model/index",
         "parentId": "root",
-        "file": "./pages/model/index.tsx",
+        "file": "./routes/model/index.tsx",
         "path": "model"
       },
-      "pages/model/chat/index": {
-        "id": "pages/model/chat/index",
-        "parentId": "pages/model/index",
-        "file": "./pages/model/chat/index.tsx",
+      "routes/model/chat/index": {
+        "id": "routes/model/chat/index",
+        "parentId": "routes/model/index",
+        "file": "./routes/model/chat/index.tsx",
         "path": "chats"
       },
-      "pages/model/chat/explorer": {
-        "id": "pages/model/chat/explorer",
-        "parentId": "pages/model/chat/index",
-        "file": "./pages/model/chat/explorer.tsx",
+      "routes/model/chat/explorer": {
+        "id": "routes/model/chat/explorer",
+        "parentId": "routes/model/chat/index",
+        "file": "./routes/model/chat/explorer.tsx",
         "path": "explorer"
       },
-      "pages/model/chat/analyzer": {
-        "id": "pages/model/chat/analyzer",
-        "parentId": "pages/model/chat/index",
-        "file": "./pages/model/chat/analyzer.tsx",
+      "routes/model/chat/analyzer": {
+        "id": "routes/model/chat/analyzer",
+        "parentId": "routes/model/chat/index",
+        "file": "./routes/model/chat/analyzer.tsx",
         "path": "analyzer"
       },
-      "pages/model/chat/builder": {
-        "id": "pages/model/chat/builder",
-        "parentId": "pages/model/chat/index",
-        "file": "./pages/model/chat/builder.tsx",
+      "routes/model/chat/builder": {
+        "id": "routes/model/chat/builder",
+        "parentId": "routes/model/chat/index",
+        "file": "./routes/model/chat/builder.tsx",
         "path": "builder"
       },
-      "pages/model/doc": {
-        "id": "pages/model/doc",
-        "parentId": "pages/model/index",
-        "file": "./pages/model/doc.tsx",
+      "routes/model/doc": {
+        "id": "routes/model/doc",
+        "parentId": "routes/model/index",
+        "file": "./routes/model/doc.tsx",
         "path": "doc"
       },
-      "pages/model/data": {
-        "id": "pages/model/data",
-        "parentId": "pages/model/index",
-        "file": "./pages/model/data.tsx",
+      "routes/model/data": {
+        "id": "routes/model/data",
+        "parentId": "routes/model/index",
+        "file": "./routes/model/data.tsx",
         "path": "data"
       },
       "catchall": {
