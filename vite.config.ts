@@ -3,7 +3,6 @@ import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { vercelPreset } from "@vercel/react-router/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [reactRouter(), tailwindcss(), vercelPreset()],
   resolve: {
