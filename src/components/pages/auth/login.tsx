@@ -6,7 +6,7 @@ import AppIcon from "@components/ui/Icon";
 
 export default function LoginComponent() {
   return (
-    <div className="auth_shadow bg-white px-8 py-14 max-w-[500px] w-full">
+    <div className="auth_shadow lg:bg-white px-4 lg:px-8 py-14 max-w-[500px] mx-auto w-full">
       <div className="flex justify-center mb-2">
         <Logo />
       </div>

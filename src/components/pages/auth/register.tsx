@@ -24,7 +24,7 @@ export default function RegisterComponent() {
     },
   ];
   return (
-    <div className="auth_shadow bg-white px-8 pt-10 pb-8 max-w-[500px] w-full">
+    <div className="auth_shadow lg:bg-white px-4 lg:px-8 pt-10 pb-8 max-w-[500px]  mx-auto w-full">
       <div className="flex justify-center mb-2">
         <Logo />
       </div>
@@ -59,16 +59,18 @@ export default function RegisterComponent() {
         </div>
         <form>
           <div className="grid gap-y-4 mb-8">
-            <TextInput
-              label="First name"
-              placeholder={"Enter first name"}
-              name={""}
-            />
-            <TextInput
-              label="Last name"
-              placeholder={"Enter last name"}
-              name={""}
-            />
+            <div className="grid sm:grid-cols-2 gap-4">
+              <TextInput
+                label="First name"
+                placeholder={"Enter first name"}
+                name={""}
+              />
+              <TextInput
+                label="Last name"
+                placeholder={"Enter last name"}
+                name={""}
+              />
+            </div>
             <TextInput
               placeholder={"name@mail.com"}
               type="email"

@@ -31,7 +31,7 @@ export default function PasswordBar({ percent }: PasswordBarProps) {
             style={{
               backgroundColor: getStrengthColor(threshold, percent),
             }}
-            className="py-[2.5px] rounded-full w-[120px]"
+            className="py-[2.5px] rounded-full w-12 sm:w-20 lg:w-[120px]"
           />
         ))}
       </div>

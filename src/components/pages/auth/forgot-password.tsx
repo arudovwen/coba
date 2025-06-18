@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 export default function ForgotPasswordComponent() {
   return (
-    <div className="auth_shadow bg-white px-8 pt-10 pb-8 max-w-[500px] w-full">
+    <div className="auth_shadow blg:g-white px-4 lg:px-8 pt-10 pb-8 max-w-[500px]  mx-auto  w-full">
       <div className="mb-8">
         <AuthHeader
           title="Password Reset"

@@ -33,7 +33,7 @@ export default function TwoFaComponent() {
   ];
   const [otp, setOtp] = useState("");
   return (
-    <div className="auth_shadow bg-white px-8 pt-10 pb-8 w-[500px]">
+    <div className="auth_shadow bg-white px-4 lg:px-8 pt-10 pb-8 max-w-[500px]  mx-auto w-full">
       <div className="mb-8">
         <AuthHeader title="2FA" text="Protect your account with 2FA Auth" />
       </div>
