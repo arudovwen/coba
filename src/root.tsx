@@ -1,6 +1,15 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import {
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+} from "react-router";
 
-export function links() {
+// import type { Route } from "./+types/root";
+import "./index.css";
+
+export const links = () => {
   return [
     {
       rel: "icon",
@@ -8,29 +17,26 @@ export function links() {
       type: "image/png",
     },
     {
-      rel: "stylesheet",
-      href: "/src/index.css",
-    },
-    {
       rel: "preload",
       href: "/images/banner.jpg",
       as: "image",
     },
-    
-       {
+
+    {
       rel: "preconnect",
       href: "https://fonts.googleapis.com",
     },
-     {
+    {
       rel: "preconnect",
       href: "https://fonts.gstatic.com",
-      crossOrigin: "true"
-    },{
+      crossOrigin: "true",
+    },
+    {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap",
     },
   ];
-}
+};
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
