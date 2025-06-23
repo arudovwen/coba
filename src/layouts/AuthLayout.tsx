@@ -9,7 +9,7 @@ export async function clientLoader() {
 
 const AuthLayout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <section className="flex lg:pt-[100px] justify-center w-screen h-screen auth_bg px-4 lg:px-0">
+    <section className="flex lg:pt-[100px] justify-center w-screen min-h-screen auth_bg px-4 lg:px-0">
       <div className="w-full mx-auto max-w-xl">{children}</div>
     </section>
   );

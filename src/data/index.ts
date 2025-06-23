@@ -19,9 +19,9 @@ export const ModelNavList = [
 
 export const SideBarList = [
   {
-    title: "Explorer",
-    link: "/model/chats/explorer",
-    icon: ExplorerSvg,
+    title: "Builder",
+    link: "/model/chats/builder",
+    icon: BuilderSvg,
   },
   {
     title: "Analyzer",
@@ -29,8 +29,8 @@ export const SideBarList = [
     icon: AnalyzerSvg,
   },
   {
-    title: "Builder",
-    link: "/model/chats/builder",
-    icon: BuilderSvg,
+    title: "Explorer",
+    link: "/model/chats/explorer",
+    icon: ExplorerSvg,
   },
 ];
