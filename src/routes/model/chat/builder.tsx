@@ -1,3 +1,5 @@
+import BuilderIndex from "@/components/pages/chats/builder";
+
 export async function clientLoader() {
   return {
     title: "Builder",
@@ -5,5 +7,5 @@ export async function clientLoader() {
 }
 
 export default function Builder() {
-  return <section>Builder</section>;
+  return <section className="h-full"><BuilderIndex /></section>;
 }

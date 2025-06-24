@@ -22,15 +22,18 @@ export const SideBarList = [
     title: "Builder",
     link: "/model/chats/builder",
     icon: BuilderSvg,
+    hasOption: true
   },
   {
     title: "Analyzer",
     link: "/model/chats/analyzer",
     icon: AnalyzerSvg,
+     hasOption: false
   },
   {
     title: "Explorer",
     link: "/model/chats/explorer",
     icon: ExplorerSvg,
+     hasOption: false
   },
 ];

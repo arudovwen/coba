@@ -1,3 +1,5 @@
+import ExploreIndex from "@/components/pages/chats/explorer";
+
 export async function clientLoader() {
   return {
     title: "Explorer",
@@ -5,5 +7,5 @@ export async function clientLoader() {
 }
 
 export default function Chats() {
-  return <section>Explorer</section>;
+  return <section className="h-full"><ExploreIndex /></section>;
 }
