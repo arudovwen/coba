@@ -12,9 +12,7 @@ export default function MessageBox() {
 
   const resizeTextArea = () => {
     if (textareaRef.current) {
-      // Reset the height to auto before measuring the new scrollHeight
       textareaRef.current.style.height = "auto";
-      // Set the new height based on the scrollHeight, and limit it to max height
       textareaRef.current.style.height =
         Math.min(textareaRef.current.scrollHeight, 200) + "px";
     }
