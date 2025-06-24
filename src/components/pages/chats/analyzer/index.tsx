@@ -1,5 +1,5 @@
 import EmptyBox from "@components/ui/empty-box";
-import MessageBox from "./message-box";
+import MessageBox from "@components/ui/message-box";
 import AnalyzeSvg from "./svgs/analyze";
 
 export default function AnalyzerIndex() {

@@ -1,5 +1,5 @@
 import EmptyBox from "@components/ui/empty-box";
-import MessageBox from "./message-box";
+import MessageBox from "@components/ui/message-box";
 import BuildSvg from "./svgs/build";
 
 export default function BuilderIndex() {
@@ -15,7 +15,7 @@ export default function BuilderIndex() {
        </div>
       </div>
 
-      <div className="h-[100px]">
+      <div className="min-h-[100px]">
         <MessageBox />
       </div>
     </div>
