@@ -46,7 +46,9 @@ export default function LoginComponent() {
                 </button>
               </Link>
             </div>
-            <Button text={"Login"} />
+            <Link to="/model/chats/builder">
+              <Button text={"Login"} />
+            </Link>
           </div>
         </form>
         <div className="mb-6">
@@ -55,7 +57,11 @@ export default function LoginComponent() {
             <span className="text-base font-semibold text-gray/50">OR</span>{" "}
             <div className="border-b flex-1  border-gray/20" />
           </div>
-          <Button text={"Login Using Google"} className="bg-[#F4F4F4] border border-[#F4F4F4] !text-gray/70"  leftIcon={<AppIcon icon="logos:google-icon" />} />
+          <Button
+            text={"Login Using Google"}
+            className="bg-[#F4F4F4] border border-[#F4F4F4] !text-gray/70"
+            leftIcon={<AppIcon icon="logos:google-icon" />}
+          />
         </div>
         <div className="text-base">
           <span className=" text-gray/70 font-semibold">

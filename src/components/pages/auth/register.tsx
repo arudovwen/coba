@@ -85,7 +85,7 @@ export default function RegisterComponent() {
             />
             <div>
               <TextInput
-                placeholder={"name@mail.com"}
+                placeholder={"Minimum 8 characters"}
                 name={""}
                 type="password"
                 label="Password"
@@ -110,7 +110,9 @@ export default function RegisterComponent() {
             )}
           </div>
           <div>
-            <Button text={"Sign Up"} />
+            <Link to="/auth/login">
+              <Button text={"Sign Up"} />
+            </Link>
           </div>
         </form>
         <div className="mb-6">

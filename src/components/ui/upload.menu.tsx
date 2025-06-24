@@ -42,7 +42,7 @@ export default function UploadMenu() {
 
   return (
     <Menu as="div" className="relative flex">
-      <MenuButton aria-label="attach" type="button">
+      <MenuButton aria-label="attach" type="button" className="cursor-pointer outline-none">
         <AttachmentSvg />
       </MenuButton>
       <Transition
