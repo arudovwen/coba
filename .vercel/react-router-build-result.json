@@ -1,0 +1,233 @@
+{
+  "buildManifest": {
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/home/index": {
+        "id": "routes/home/index",
+        "parentId": "root",
+        "file": "./routes/home/index.tsx",
+        "index": true
+      },
+      "routes/auth/login": {
+        "id": "routes/auth/login",
+        "parentId": "root",
+        "file": "./routes/auth/login.tsx",
+        "path": "auth/login"
+      },
+      "routes/auth/register": {
+        "id": "routes/auth/register",
+        "parentId": "root",
+        "file": "./routes/auth/register.tsx",
+        "path": "auth/register"
+      },
+      "routes/auth/confirm-email": {
+        "id": "routes/auth/confirm-email",
+        "parentId": "root",
+        "file": "./routes/auth/confirm-email.tsx",
+        "path": "auth/confirm-email"
+      },
+      "routes/auth/forgot-password": {
+        "id": "routes/auth/forgot-password",
+        "parentId": "root",
+        "file": "./routes/auth/forgot-password.tsx",
+        "path": "auth/forgot-password"
+      },
+      "routes/auth/password-reset": {
+        "id": "routes/auth/password-reset",
+        "parentId": "root",
+        "file": "./routes/auth/password-reset.tsx",
+        "path": "auth/reset-password"
+      },
+      "routes/auth/two-factor-authentication": {
+        "id": "routes/auth/two-factor-authentication",
+        "parentId": "root",
+        "file": "./routes/auth/two-factor-authentication.tsx",
+        "path": "auth/two-factor-setup"
+      },
+      "routes/page/index": {
+        "id": "routes/page/index",
+        "parentId": "root",
+        "file": "./routes/page/index.tsx",
+        "path": ""
+      },
+      "routes/page/chat/index": {
+        "id": "routes/page/chat/index",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/chat/index.tsx",
+        "path": "chats"
+      },
+      "routes/page/chat/explorer": {
+        "id": "routes/page/chat/explorer",
+        "parentId": "routes/page/chat/index",
+        "file": "./routes/page/chat/explorer.tsx",
+        "path": "explorer"
+      },
+      "routes/page/chat/analyzer": {
+        "id": "routes/page/chat/analyzer",
+        "parentId": "routes/page/chat/index",
+        "file": "./routes/page/chat/analyzer.tsx",
+        "path": "analyzer"
+      },
+      "routes/page/chat/builder": {
+        "id": "routes/page/chat/builder",
+        "parentId": "routes/page/chat/index",
+        "file": "./routes/page/chat/builder.tsx",
+        "path": "builder"
+      },
+      "routes/page/doc": {
+        "id": "routes/page/doc",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/doc.tsx",
+        "path": "doc"
+      },
+      "routes/page/data": {
+        "id": "routes/page/data",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/data.tsx",
+        "path": "data"
+      },
+      "routes/page/model/index": {
+        "id": "routes/page/model/index",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/model/index.tsx",
+        "path": "model"
+      },
+      "catchall": {
+        "id": "catchall",
+        "parentId": "root",
+        "file": "catchall.tsx",
+        "path": "*?"
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "C:/Users/succe/Documents/GitHub/CoBA/src",
+    "basename": "/",
+    "buildDirectory": "C:/Users/succe/Documents/GitHub/CoBA/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/home/index": {
+        "id": "routes/home/index",
+        "parentId": "root",
+        "file": "./routes/home/index.tsx",
+        "index": true
+      },
+      "routes/auth/login": {
+        "id": "routes/auth/login",
+        "parentId": "root",
+        "file": "./routes/auth/login.tsx",
+        "path": "auth/login"
+      },
+      "routes/auth/register": {
+        "id": "routes/auth/register",
+        "parentId": "root",
+        "file": "./routes/auth/register.tsx",
+        "path": "auth/register"
+      },
+      "routes/auth/confirm-email": {
+        "id": "routes/auth/confirm-email",
+        "parentId": "root",
+        "file": "./routes/auth/confirm-email.tsx",
+        "path": "auth/confirm-email"
+      },
+      "routes/auth/forgot-password": {
+        "id": "routes/auth/forgot-password",
+        "parentId": "root",
+        "file": "./routes/auth/forgot-password.tsx",
+        "path": "auth/forgot-password"
+      },
+      "routes/auth/password-reset": {
+        "id": "routes/auth/password-reset",
+        "parentId": "root",
+        "file": "./routes/auth/password-reset.tsx",
+        "path": "auth/reset-password"
+      },
+      "routes/auth/two-factor-authentication": {
+        "id": "routes/auth/two-factor-authentication",
+        "parentId": "root",
+        "file": "./routes/auth/two-factor-authentication.tsx",
+        "path": "auth/two-factor-setup"
+      },
+      "routes/page/index": {
+        "id": "routes/page/index",
+        "parentId": "root",
+        "file": "./routes/page/index.tsx",
+        "path": ""
+      },
+      "routes/page/chat/index": {
+        "id": "routes/page/chat/index",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/chat/index.tsx",
+        "path": "chats"
+      },
+      "routes/page/chat/explorer": {
+        "id": "routes/page/chat/explorer",
+        "parentId": "routes/page/chat/index",
+        "file": "./routes/page/chat/explorer.tsx",
+        "path": "explorer"
+      },
+      "routes/page/chat/analyzer": {
+        "id": "routes/page/chat/analyzer",
+        "parentId": "routes/page/chat/index",
+        "file": "./routes/page/chat/analyzer.tsx",
+        "path": "analyzer"
+      },
+      "routes/page/chat/builder": {
+        "id": "routes/page/chat/builder",
+        "parentId": "routes/page/chat/index",
+        "file": "./routes/page/chat/builder.tsx",
+        "path": "builder"
+      },
+      "routes/page/doc": {
+        "id": "routes/page/doc",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/doc.tsx",
+        "path": "doc"
+      },
+      "routes/page/data": {
+        "id": "routes/page/data",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/data.tsx",
+        "path": "data"
+      },
+      "routes/page/model/index": {
+        "id": "routes/page/model/index",
+        "parentId": "routes/page/index",
+        "file": "./routes/page/model/index.tsx",
+        "path": "model"
+      },
+      "catchall": {
+        "id": "catchall",
+        "parentId": "root",
+        "file": "catchall.tsx",
+        "path": "*?"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "initial"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": false
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
