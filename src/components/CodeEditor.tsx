@@ -90,6 +90,7 @@ export default function CodeEditor({
             fontSize: 14,
             scrollBeyondLastLine: false,
             padding: { top: 10 },
+              renderLineHighlight: "none",
           }}
         />
       </div>
