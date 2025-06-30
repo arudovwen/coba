@@ -5,34 +5,38 @@ import ExplorerSvg from "@/components/pages/model/svgs/explorer";
 export const ModelNavList = [
   {
     title: "Chats",
-    link: "/model/chats",
+    link: "/chats",
   },
   {
     title: "Data",
-    link: "/model/data",
+    link: "/data",
+  },
+  {
+    title: "Model",
+    link: "/model",
   },
   {
     title: "Doc",
-    link: "/model/doc",
+    link: "/doc",
   },
 ];
 
 export const SideBarList = [
   {
     title: "Builder",
-    link: "/model/chats/builder",
+    link: "/chats/builder",
     icon: BuilderSvg,
     hasOption: true
   },
   {
     title: "Analyzer",
-    link: "/model/chats/analyzer",
+    link: "/chats/analyzer",
     icon: AnalyzerSvg,
      hasOption: false
   },
   {
     title: "Explorer",
-    link: "/model/chats/explorer",
+    link: "/chats/explorer",
     icon: ExplorerSvg,
      hasOption: false
   },

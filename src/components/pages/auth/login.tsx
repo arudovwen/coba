@@ -46,7 +46,7 @@ export default function LoginComponent() {
                 </button>
               </Link>
             </div>
-            <Link to="/model/chats/builder">
+            <Link to="/chats/builder">
               <Button text={"Login"} />
             </Link>
           </div>

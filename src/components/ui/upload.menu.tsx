@@ -8,6 +8,7 @@ import {
 } from "@headlessui/react";
 import AttachmentSvg from "../pages/chats/builder/svgs/attachment";
 import AppIcon from "@/components/ui/Icon";
+import { FileType } from "@/types";
 
 const menuOptions = [
   {
@@ -24,7 +25,11 @@ const menuOptions = [
   },
 ];
 
-export default function UploadMenu() {
+export default function UploadMenu({
+  handleFileUpload,
+}: {
+  handleFileUpload: (e: FileType) => void;
+}) {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const handleUploadClick = () => {
@@ -35,14 +40,31 @@ export default function UploadMenu() {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (files?.length) {
-      // Handle the file upload logic here (e.g., display the file name or upload the file)
-      console.log("File selected:", files[0]);
+      const file = files[0]; // Get the first selected file
+
+      // Extract the file extension (after the last dot in the file name)
+      const fileExtension = file.name.split(".").pop()?.toLowerCase() || "";
+
+      // Extract the file name without extension
+      const fileName = file.name.split(".").slice(0, -1).join(".");
+
+      // Convert the file to base64
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const base64 = reader.result as string;
+        handleFileUpload({ fileName, fileExtension, base64 });
+      };
+      reader.readAsDataURL(file); // Start reading the file as base64
     }
   };
 
   return (
     <Menu as="div" className="relative flex">
-      <MenuButton aria-label="attach" type="button" className="cursor-pointer outline-none">
+      <MenuButton
+        aria-label="attach"
+        type="button"
+        className="cursor-pointer outline-none"
+      >
         <AttachmentSvg />
       </MenuButton>
       <Transition

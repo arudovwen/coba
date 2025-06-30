@@ -1,5 +1,3 @@
-import ModelLayout from "@layouts/ModelLayout";
-
 export async function clientLoader() {
   return {
     title: "Data",
@@ -8,8 +6,8 @@ export async function clientLoader() {
 
 export default function Data() {
   return (
-    <ModelLayout>
+    <section>
       Data
-    </ModelLayout>
+    </section>
   );
 }

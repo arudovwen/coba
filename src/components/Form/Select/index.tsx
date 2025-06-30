@@ -32,6 +32,7 @@ const SelectDropdown: React.FC<SelectProp> = ({
   error,
   name,
 }) => {
+ 
   return (
     <div className={`${containerStyles} w-full`}>
       {label && (
@@ -47,9 +48,9 @@ const SelectDropdown: React.FC<SelectProp> = ({
         optionLabel="name"
         placeholder={placeholder}
         filter={filter}
-        className={`${dropdownStyles} custom-dropdown w-full h-[2.75rem] flex items-center my-2 text-[0.75rem] text-[#101828] font-[400] pl-4 border border-[#D0D5DD] bg-white rounded-[0.5rem] shadow-sm shadow-[#1018280D] mb-2`}
+        className={`${dropdownStyles} custom-dropdown pr-3 w-full h-[2.75rem] flex items-center border-[#D0D5DD] bg-[#F6F6F6] my-2 text-[0.75rem] text-[#101828] font-[400] pl-4 border  rounded-[0.5rem] shadow-sm shadow-[#1018280D] mb-2`}
         disabled={disabled}
-        showClear
+        
       />
 
       {error && (

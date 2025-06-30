@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   rightIcon,
 }) => {
   const baseClasses =
-    "flex items-center justify-center text-center h-[3rem] w-full font-onest font-semibold text-base rounded-[0.5rem] px-4 transition duration-200";
+    "flex items-center justify-center text-center cursor-pointer py-[11px] w-full font-onest font-semibold text-base rounded px-4 transition duration-200";
 
   const variantClasses = {
     primary: "bg-[#3D3F94] text-white",

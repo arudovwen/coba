@@ -2,7 +2,6 @@ type TextAreaProp = {
   placeholder: string;
   label?: string;
   value?: string;
-  type: React.HTMLInputTypeAttribute;
   className?: string;
   hasIcon?: boolean;
   children?: React.ReactNode;
@@ -43,13 +42,13 @@ const TextArea: React.FC<TextAreaProp> = ({
         </span>
       )}
       <div
-        className={`${containerStyle} flex items-center items-center px-2 border border-[#D0D5DD] bg-white rounded-[0.5rem] shadow-sm shadow-[#1018280D]`}
+        className={`${containerStyle} flex items-center px-2 border border-[#D0D5DD] bg-[#F6F6F6] rounded-[0.5rem] shadow-sm shadow-[#1018280D]`}
       >
         <textarea
           rows={rows}
           name={name}
           placeholder={placeholder}
-          className={`${className} w-full bg-transparent p-2  border-0 focus:outline-none py-2 text-[0.875rem] text-[#101828] font-[400] placeholder:text-[#667085]`}
+          className={`${className} w-full bg-transparent p-2 placeholder:text-gray/30   border-0 focus:outline-none py-2 text-[0.875rem]`}
           value={value}
           onChange={onChange}
           onKeyDown={onKeyDown}

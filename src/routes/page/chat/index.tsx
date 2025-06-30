@@ -1,4 +1,4 @@
-import ModelLayout from "@layouts/ModelLayout";
+import ChatLayout from "@/layouts/ChatLayout";
 import { Outlet } from "react-router";
 
 export async function clientLoader() {
@@ -9,10 +9,10 @@ export async function clientLoader() {
 
 export default function Chats() {
   return (
-    <ModelLayout>
+    <ChatLayout>
      
         <Outlet />
      
-    </ModelLayout>
+    </ChatLayout>
   );
 }

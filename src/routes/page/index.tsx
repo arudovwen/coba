@@ -1,5 +1,5 @@
+import Topbar from "@/components/pages/model/layout/topbar";
 import { Outlet } from "react-router";
-import Topbar from "@components/pages/model/layout/topbar";
 
 export default function Model() {
   return (

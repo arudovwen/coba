@@ -8,16 +8,17 @@ const routes = [
   route("auth/forgot-password", "./routes/auth/forgot-password.tsx"),
   route("auth/reset-password", "./routes/auth/password-reset.tsx"),
   route("auth/two-factor-setup", "./routes/auth/two-factor-authentication.tsx"),
-  route("model", "./routes/model/index.tsx", [
-    // index("./routes/model/chats.tsx"),
-    route("chats", "./routes/model/chat/index.tsx", [
-      // index("./routes/model/chat/explorer.tsx"),
-      route("explorer", "./routes/model/chat/explorer.tsx"),
-      route("analyzer", "./routes/model/chat/analyzer.tsx"),
-      route("builder", "./routes/model/chat/builder.tsx"),
+  route("", "./routes/page/index.tsx", [
+    // index("./routes/page/chats.tsx"),
+    route("chats", "./routes/page/chat/index.tsx", [
+      // index("./routes/page/chat/explorer.tsx"),
+      route("explorer", "./routes/page/chat/explorer.tsx"),
+      route("analyzer", "./routes/page/chat/analyzer.tsx"),
+      route("builder", "./routes/page/chat/builder.tsx"),
     ]),
-    route("doc", "./routes/model/doc.tsx"),
-    route("data", "./routes/model/data.tsx"),
+    route("doc", "./routes/page/doc.tsx"),
+    route("data", "./routes/page/data.tsx"),
+      route("model", "./routes/page/model/index.tsx"),
   ]),
   route("*?", "catchall.tsx"),
 ] satisfies RouteConfig;

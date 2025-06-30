@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Dialog } from "primereact/dialog";
+import AppIcon from "../ui/Icon";
 
 type ModalProps = {
   visible: boolean;
@@ -11,7 +12,7 @@ type ModalProps = {
 };
 
 const sizeClassMap: Record<NonNullable<ModalProps["size"]>, string> = {
-  small: "lg:max-w-md",
+  small: "lg:max-w-sm",
   medium: "lg:max-w-lg",
   large: "lg:max-w-2xl",
   "extra-large": "lg:max-w-4xl",
@@ -21,7 +22,7 @@ const Modal: React.FC<ModalProps> = ({
   visible,
   closeModal,
   children,
-  size = "medium",
+  size = "small",
   className = "",
   closable = false,
 }) => {
@@ -38,18 +39,18 @@ const Modal: React.FC<ModalProps> = ({
       closable={closable}
       resizable={false}
       content={() => (
-        <div className="flex flex-col px-4 py-5 overflow-y-scroll no-scrollbar bg-white sm:rounded-[1.688rem] sm:h-full">
+        <div className="relative px-4 pt-5 pb-6 overflow-y-scroll no-scrollbar bg-white sm:rounded-[1.688rem] sm:h-full">
           {/* Close Button */}
-          <div className="flex w-full justify-end">
+         
             <button
               type="button"
               onClick={closeModal}
-              className="border border-[#182230] cursor-pointer rounded-full p-4 w-[32px] h-[32px] flex items-center justify-center"
+              className="cursor-pointer rounded-full p-4 w-[32px] h-[32px] flex items-center justify-center absolute top-3 right-4 z-10"
               aria-label="Close"
             >
-              <span className="pi pi-times"></span>
+              <AppIcon icon="stash:times-duotone" iconClass="text-[#EF5D5D] text-xl" />
             </button>
-          </div>
+     
           {/* Modal Content */}
           {children}
         </div>
