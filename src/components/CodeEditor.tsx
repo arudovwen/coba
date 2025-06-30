@@ -86,7 +86,7 @@ export default function CodeEditor({
           onMount={handleEditorDidMount}
           className="w-full h-full relative z-0"
           options={{
-            minimap: { enabled: false },
+            minimap: { enabled: true },
             fontSize: 14,
             scrollBeyondLastLine: false,
             padding: { top: 10 },
