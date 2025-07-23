@@ -34,7 +34,7 @@ const SelectDropdown: React.FC<SelectProp> = ({
 }) => {
  
   return (
-    <div className={`${containerStyles} w-full`}>
+    <div className={`${containerStyles} w-full h-full`}>
       {label && (
         <span className="mb-2 text-[0.875rem] text-[#344054] font-onest font-[500] leading-[1.25rem]">
           {label}
@@ -48,7 +48,7 @@ const SelectDropdown: React.FC<SelectProp> = ({
         optionLabel="name"
         placeholder={placeholder}
         filter={filter}
-        className={`${dropdownStyles} custom-dropdown pr-3 w-full h-[2.75rem] flex items-center border-[#D0D5DD] bg-[#F6F6F6] my-2 text-[0.75rem] text-[#101828] font-[400] pl-4 border  rounded-[0.5rem] shadow-sm shadow-[#1018280D] mb-2`}
+        className={`${dropdownStyles} custom-dropdown pr-3 w-full h-full py-3 text-sm flex items-center border-[#D0D5DD] bg-[#F6F6F6] my-2 text-[0.75rem] text-[#101828] font-[400] pl-4 border  rounded-[0.5rem] shadow-sm shadow-[#1018280D] mb-2`}
         disabled={disabled}
         
       />

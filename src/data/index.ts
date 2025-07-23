@@ -26,18 +26,54 @@ export const SideBarList = [
     title: "Builder",
     link: "/chats/builder",
     icon: BuilderSvg,
-    hasOption: true
+    hasOption: true,
   },
   {
     title: "Analyzer",
     link: "/chats/analyzer",
     icon: AnalyzerSvg,
-     hasOption: false
+    hasOption: false,
   },
   {
     title: "Explorer",
     link: "/chats/explorer",
     icon: ExplorerSvg,
-     hasOption: false
+    hasOption: false,
   },
+];
+
+export const DocSortOptions = [
+   {
+    label: "Sort",
+    value: "",
+  },
+  {
+    label: "Name",
+    value: "name",
+  },
+    {
+    label: "Type",
+    value: "type",
+  },
+    {
+    label: "Size",
+    value: "size",
+  },
+    {
+    label: "Date Uploaded",
+    value: "date",
+  },
+];
+
+
+export const GridSortOptions = [
+   {
+    label: "Excel/CSV",
+    value: "",
+  },
+  {
+    label: "...Other",
+    value: "name",
+  },
+ 
 ];

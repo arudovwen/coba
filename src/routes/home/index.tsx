@@ -6,5 +6,14 @@ export async function clientLoader() {
 }
 
 export default function Component() {
-  return <h1 className="text-3xl font-bold text-green-500 underline">Landing page!</h1>;
+  return (
+    <div className="text-3xl font-bold text-green-500 underline h-screen bg-main">
+      <iframe
+        src="https://jupyterlite.github.io/demo/lab"
+        width="100%"
+        height="100%"
+        title="JupyterLite"
+      />
+    </div>
+  );
 }

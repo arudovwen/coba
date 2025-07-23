@@ -7,7 +7,9 @@
   --color-black: #000000;
   --color-gray: #333333;
   --color-red: #ef5d5d;
+  --rdg-color-scheme: light
 }
+
 .auth_bg {
   background: linear-gradient(
     124.64deg,
@@ -606,4 +608,23 @@ body {
 
 .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
   left: 0 !important;
+}
+
+.doc_sectino__shadow{
+  box-shadow: 0px 4px 11px 0px #CCCDFC40;
+
+}
+
+.doc_card{
+  box-shadow: 0px 4px 11px 0px #3D3F9426;
+
+}
+.select_shadow{
+  box-shadow: 0px 4px 11px 0px #00000026;
+
+}
+
+.rdg, .rdg-cell{
+  border-color: #3D3F9480;
+  color: #333333B2;
 }

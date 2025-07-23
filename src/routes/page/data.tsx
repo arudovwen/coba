@@ -1,3 +1,5 @@
+import DataIndex from "@/components/pages/data";
+
 export async function clientLoader() {
   return {
     title: "Data",
@@ -6,8 +8,8 @@ export async function clientLoader() {
 
 export default function Data() {
   return (
-    <section>
-      Data
+    <section className="bg-[bg-[#F5F5FA]">
+      <DataIndex />
     </section>
   );
 }
